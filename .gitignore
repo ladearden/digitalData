@@ -8,8 +8,15 @@
 # testing
 /coverage
 
+# Dev
+/components
+/pages
+/public
+/styles
+
+
 # next.js
-/.next/
+#/.next/
 /out/
 
 # production
