@@ -25,11 +25,11 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+    
         
     - name: Installing my packages
-    - run: npm ci
-    
+      run: npm ci
+
     - name: Build my App  
       run: npm run build
       env:
