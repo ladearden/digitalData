@@ -5,48 +5,48 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/4-SQUbJnf1fxK-x8jLV0z/_buildManifest.js",
-    "static/4-SQUbJnf1fxK-x8jLV0z/_ssgManifest.js"
+    "static/7mZ36eVd2cPlH0aITCSQq/_buildManifest.js",
+    "static/7mZ36eVd2cPlH0aITCSQq/_ssgManifest.js"
   ],
   "pages": {
     "/": [
-      "static/chunks/webpack-20d43e08bea62467b090.js",
+      "static/chunks/webpack-338ffe4b30d3e7c03cec.js",
       "static/chunks/framework-d23658296916ce920464.js",
       "static/chunks/main-4777350f2a9ff73ea2b0.js",
       "static/chunks/pages/index-986c20bb368cae8bee09.js"
     ],
     "/_app": [
-      "static/chunks/webpack-20d43e08bea62467b090.js",
+      "static/chunks/webpack-338ffe4b30d3e7c03cec.js",
       "static/chunks/framework-d23658296916ce920464.js",
       "static/chunks/main-4777350f2a9ff73ea2b0.js",
       "static/css/be04bb06148f2630204c.css",
       "static/chunks/pages/_app-e1c34a393a0d20e4afd8.js"
     ],
     "/_error": [
-      "static/chunks/webpack-20d43e08bea62467b090.js",
+      "static/chunks/webpack-338ffe4b30d3e7c03cec.js",
       "static/chunks/framework-d23658296916ce920464.js",
       "static/chunks/main-4777350f2a9ff73ea2b0.js",
       "static/chunks/pages/_error-9faf4177fb4e528b4124.js"
     ],
     "/hello": [
-      "static/chunks/webpack-20d43e08bea62467b090.js",
+      "static/chunks/webpack-338ffe4b30d3e7c03cec.js",
       "static/chunks/framework-d23658296916ce920464.js",
       "static/chunks/main-4777350f2a9ff73ea2b0.js",
       "static/chunks/pages/hello-20d56c579a2eeee16184.js"
     ],
     "/lgas": [
-      "static/chunks/webpack-20d43e08bea62467b090.js",
+      "static/chunks/webpack-338ffe4b30d3e7c03cec.js",
       "static/chunks/framework-d23658296916ce920464.js",
       "static/chunks/main-4777350f2a9ff73ea2b0.js",
       "static/chunks/pages/lgas-ba3568889e234b8f988b.js"
     ],
     "/lgas/[id]": [
-      "static/chunks/webpack-20d43e08bea62467b090.js",
+      "static/chunks/webpack-338ffe4b30d3e7c03cec.js",
       "static/chunks/framework-d23658296916ce920464.js",
       "static/chunks/main-4777350f2a9ff73ea2b0.js",
       "static/chunks/36bcf0ca-53b1938a8ce1b707a11e.js",
-      "static/chunks/497-05585d5ee7d84836a65b.js",
-      "static/chunks/pages/lgas/[id]-40f8964f1207128c3631.js"
+      "static/chunks/497-7ed82bc553b9e0a17d63.js",
+      "static/chunks/pages/lgas/[id]-b5c9bb289b15806e66b2.js"
     ]
   },
   "ampFirstPages": []

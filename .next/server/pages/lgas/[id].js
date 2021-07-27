@@ -92,6 +92,7 @@ function Population() {
 /* harmony default export */ var components_Population = (Population);
 ;// CONCATENATED MODULE: external "next/dynamic"
 var dynamic_namespaceObject = require("next/dynamic");;
+var dynamic_default = /*#__PURE__*/__webpack_require__.n(dynamic_namespaceObject);
 ;// CONCATENATED MODULE: external "path"
 var external_path_namespaceObject = require("path");;
 var external_path_default = /*#__PURE__*/__webpack_require__.n(external_path_namespaceObject);
@@ -108,21 +109,29 @@ var external_fs_default = /*#__PURE__*/__webpack_require__.n(external_fs_namespa
 
 
 function LGA({
-  lga
+  lga,
+  geo
 }) {
   const router = (0,router_namespaceObject.useRouter)();
   const {
     id
-  } = router.query; // const LGAmap = dynamic(
-  //     () => import('../../components/LGAmap'),
-  //     { 
-  //         loading: () => <p>A map is loading</p>,
-  //         ssr: false } // This line is important. It's what prevents server-side render
-  //   )
-
+  } = router.query;
+  const LGAmap = dynamic_default()(() => __webpack_require__.e(/* import() */ 529).then(__webpack_require__.bind(__webpack_require__, 5529)), {
+    loading: () => /*#__PURE__*/jsx_runtime_.jsx("p", {
+      children: "A map is loading"
+    }),
+    ssr: false,
+    loadableGenerated: {
+      webpack: () => [/*require.resolve*/(5529)],
+      modules: ["lgas\\[id].js -> " + '../../components/LGAmap']
+    }
+  } // This line is important. It's what prevents server-side render
+  );
   return /*#__PURE__*/(0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
     children: [/*#__PURE__*/jsx_runtime_.jsx("h1", {
       children: "Armidale Regional council data"
+    }), /*#__PURE__*/jsx_runtime_.jsx(LGAmap, {
+      geo: geo
     }), /*#__PURE__*/jsx_runtime_.jsx(components_Population, {})]
   });
 }
@@ -131,13 +140,17 @@ async function getStaticProps({
 }) {
   // const req = await fetch(`data/${params.id}.json`);
   // const data = await req.json();
-  const dataFilePath = external_path_default().join(process.cwd(), "public/data", "armidale.json"); //console.log(dataFilePath);     // will be YourProject/jsonFiles/data.json
+  const dataFilePath = external_path_default().join(process.cwd(), "public/data", "armidale.json");
+  const lgaFp = external_path_default().join(process.cwd(), "public/data", "Armidal_Regional_LGAgeo.json"); //console.log(dataFilePath);     // will be YourProject/jsonFiles/data.json
 
   const fileContents = external_fs_default().readFileSync(dataFilePath, "utf8");
+  const lgaFile = external_fs_default().readFileSync(lgaFp, "utf8");
   const data = JSON.parse(fileContents);
+  const lgaData = JSON.parse(lgaFile);
   return {
     props: {
-      lga: data
+      lga: data,
+      geo: lgaData
     }
   };
 }
@@ -161,6 +174,22 @@ async function getStaticPaths() {
     fallback: false
   };
 }
+
+/***/ }),
+
+/***/ 9297:
+/***/ (function(module) {
+
+"use strict";
+module.exports = require("react");;
+
+/***/ }),
+
+/***/ 6656:
+/***/ (function(module) {
+
+"use strict";
+module.exports = require("react-leaflet");;
 
 /***/ }),
 
